@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>Smile Collections</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="wrapper">
+          <div class="nav">
+            <!-- Logo -->
+            <img src="./images/logo.jpg" alt="Logo"  width="60px"/>
+            <!-- Hamburger -->
+            <button id="hamburger" type="button" onclick="toggleHambuger()">
+              <img src="./images/icon-hamburger.svg" alt="Hamburger" id="hamburger_icon" />
+            </button>
+            <!-- links -->
+            <div class="links">
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Contact</a>
+              <a href="#">Blog</a>
+              <a href="#">Careers</a>
+            </div>
+            <button class="request" type="button">Request Invite</button>
+          </div>
+        </div>
+      </nav>
+      <!-- Mobile navigation -->
+      <div id="mobile_nav">
+        <div class="mobile-links">
+          <a href="#">Home</a>
+          <a href="#">Sneakers</a>
+          <a href="#">Cloths</a>
+          <a href="#">Shoes</a>
+          <a href="#">Rings</a>
+          <a href="#">Contact Us</a>
+          <a href="#">About Us</a>
+        </div>
+      </div>  
+
+      <h1>Welcome to Smile Collections,Where Style Meets Substance!</h1>
+      <p class="first-p">Step into a world of unparalleled elegance<br> and timeless fashion at Smile Collections.
+         We<br> are thrilled to welcome you to our exclusive landing page, where each click is an invitation to explore a curated collection of shoes, bags, clothes, rings,
+         and more carefully selected to elevate your style and express your individuality.</p>
+         
+          <a class="shop" href="https://awwal123.github.io/Glam-collections/" target="_blank">Shop Now</a>
+
+    
+    <!-- hamburger -->
+    <script>
+        const mobile_nav = document.getElementById("mobile_nav");
+        const hamburger_icon = document.getElementById("hamburger_icon");
+        console.log(mobile_nav)
+
+        mobile_nav.style.display = "none"
+        // hamburger_icon
+        function toggleHambuger() {
+         
+         if (mobile_nav.style.display == "none"){
+          mobile_nav.style.display = "block";
+          // hamburger_icon.setAttribute("src", "./images/icon-close.svg");
+          hamburger_icon.setAttribute('src', './images/icon-close.svg')
+         } else {
+          mobile_nav.style.display = "none"
+         }
+         
+        }
+    </script>
+</body>
+</html>
